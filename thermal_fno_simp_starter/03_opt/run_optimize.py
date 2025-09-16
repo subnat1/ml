@@ -1,8 +1,13 @@
 
+# import argparse, numpy as np
+# from .simp_core import density_filter, compliance, oc_update, sens_fea_like
+# from .forward_fea import forward_temp_fea
+# from .forward_fno import FNOInfer
+
 import argparse, numpy as np
-from .simp_core import density_filter, compliance, oc_update, sens_fea_like
-from .forward_fea import forward_temp_fea
-from .forward_fno import FNOInfer
+from simp_core import density_filter, compliance, oc_update, sens_fea_like
+from forward_fea import forward_temp_fea
+from forward_fno import FNOInfer
 
 def build_problem(H, W, mode="A"):
     vol_frac = 0.4

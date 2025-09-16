@@ -1,7 +1,9 @@
-
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "02_fno")))
+from model_fno2d import FNO2d
 import numpy as np, torch
-from ..02_fno.model_fno2d import FNO2d
-from .simp_core import penalize_k
+# from model_fno2d import FNO2d
+from simp_core import penalize_k
 
 class FNOInfer:
     def __init__(self, model_path, width=32, modes=16, layers=4, device=None):
