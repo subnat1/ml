@@ -1,0 +1,5 @@
+boundary,type,h,T_inf,normal
+left,Robin,0.1,300.0,"(-1,0)"
+right,Robin,0.1,300.0,"(+1,0)"
+bottom,Robin,0.1,300.0,"(0,-1)"
+top,Robin,0.1,300.0,"(0,+1)"
